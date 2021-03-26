@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap");
+
+body {
+  margin: 0;
+  padding: 2em;
+  background-image: url("./images/backgroundImage.jpg");
+  background-size: contain;
+  background-position: right bottom;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  font-family: "Orbitron", sans-serif;
+}
+
+img {
+  margin-top: 2em;
+  max-width: 200px;
+}
+
+h1,
+h2 {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-shadow: 1px 1px black, -1px -1px #444;
+}
+
+.grid {
+  border: 3px solid grey;
+  box-shadow: 2px 3px 20px 3px white;
+  margin-top: 1em;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: black;
+}
+
+.square {
+  width: 20px;
+  height: 20px;
+}
+
+.apple {
+  background-image: url("./images/apple.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#start {
+  padding: 0.5em 1.5em;
+  cursor: pointer;
+  font-family: "Orbitron", sans-serif;
+  letter-spacing: 2px;
+  font-weight: bold;
+  background-color: white;
+  outline: none;
+  border: none;
+  transition: all 0.2s ease;
+}
+
+#start:hover {
+  transform: scale(1.2);
+  background-color: yellow;
+  border: none;
+  box-shadow: 1px 1px 10px 5px yellow;
+}
+
+.head0 {
+  background-image: url("./images/head.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.head90 {
+  background-image: url("./images/head.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: rotate(90deg);
+}
+
+.head180 {
+  background-image: url("./images/head.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: rotate(180deg);
+}
+.head270 {
+  background-image: url("./images/head.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: rotate(270deg);
+}
+
+.tail0 {
+  background-image: url("./images/tail.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.tail90 {
+  background-image: url("./images/tail.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: rotate(90deg);
+}
+
+.tail180 {
+  background-image: url("./images/tail.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: rotate(180deg);
+}
+.tail270 {
+  background-image: url("./images/tail.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: rotate(270deg);
+}
+
+.body0 {
+  background-image: url("./images/body.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.body90 {
+  background-image: url("./images/body.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: rotate(90deg);
+}
+
+.bodytwisted0 {
+  background-image: url("./images/bodytwisted.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bodytwisted90 {
+  background-image: url("./images/bodytwisted.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: rotate(90deg);
+}
+
+.bodytwisted180 {
+  background-image: url("./images/bodytwisted.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: rotate(180deg);
+}
+.bodytwisted270 {
+  background-image: url("./images/bodytwisted.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: rotate(270deg);
+}
