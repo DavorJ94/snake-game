@@ -30,22 +30,32 @@ h2 {
   border: 3px solid grey;
   box-shadow: 2px 3px 20px 3px white;
   margin-top: 1em;
-  width: 300px;
-  height: 300px;
+  width: 225px;
+  height: 225px;
   display: flex;
   flex-wrap: wrap;
   background-color: black;
 }
 
 .square {
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
 }
 
 .apple {
   background-image: url("./images/apple.png");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.snake {
+  background-color: yellow;
+  border-radius: 50%;
+}
+
+.snakeHead {
+  background-color: orange;
+  border-radius: 50%;
 }
 
 #start {
@@ -58,6 +68,7 @@ h2 {
   outline: none;
   border: none;
   transition: all 0.2s ease;
+  margin-top: 2em;
 }
 
 #start:hover {
@@ -67,10 +78,62 @@ h2 {
   box-shadow: 1px 1px 10px 5px yellow;
 }
 
-.head0 {
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: transparent;
+  margin: 0 auto;
+  padding: 2em;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+.controlButtons {
+  margin-top: 2em;
+  display: none;
+}
+
+.btns {
+  padding: 0.5em 2em;
+  cursor: pointer;
+  font-family: "Orbitron", sans-serif;
+  letter-spacing: 2px;
+  font-size: 12px;
+  font-weight: bold;
+  background-color: white;
+  outline: none;
+  border: 1px solid black;
+}
+
+.btns:active {
+  background-color: yellow;
+}
+
+@media (max-width: 550px) {
+  .controlButtons {
+    display: block;
+  }
+}
+/* .head0 {
   background-image: url("./images/head.png");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+  background-size: 80% 100%;
 }
 
 .head90 {
@@ -78,6 +141,8 @@ h2 {
   background-repeat: no-repeat;
   background-size: cover;
   transform: rotate(90deg);
+  background-position: center;
+  background-size: 80% 100%;
 }
 
 .head180 {
@@ -85,18 +150,24 @@ h2 {
   background-repeat: no-repeat;
   background-size: cover;
   transform: rotate(180deg);
+  background-position: center;
+  background-size: 80% 100%;
 }
 .head270 {
   background-image: url("./images/head.png");
   background-repeat: no-repeat;
   background-size: cover;
   transform: rotate(270deg);
+  background-position: center;
+  background-size: 80% 100%;
 }
 
 .tail0 {
   background-image: url("./images/tail.png");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+  background-size: 100% 80%;
 }
 
 .tail90 {
@@ -104,6 +175,8 @@ h2 {
   background-repeat: no-repeat;
   background-size: cover;
   transform: rotate(90deg);
+  background-position: center;
+  background-size: 100% 80%;
 }
 
 .tail180 {
@@ -111,24 +184,33 @@ h2 {
   background-repeat: no-repeat;
   background-size: cover;
   transform: rotate(180deg);
+  background-position: center;
+  background-size: 100% 80%;
 }
 .tail270 {
   background-image: url("./images/tail.png");
   background-repeat: no-repeat;
   background-size: cover;
   transform: rotate(270deg);
+  background-position: center;
+  background-size: 100% 80%;
 }
 
 .body0 {
   background-image: url("./images/body.png");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+  background-size: 100% 80%;
 }
 
 .body90 {
   background-image: url("./images/body.png");
   background-repeat: no-repeat;
   background-size: cover;
+
+  background-position: center;
+  background-size: 100% 80%;
   transform: rotate(90deg);
 }
 
@@ -136,6 +218,8 @@ h2 {
   background-image: url("./images/bodytwisted.png");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+  background-size: 80% 80%;
 }
 
 .bodytwisted90 {
@@ -143,6 +227,8 @@ h2 {
   background-repeat: no-repeat;
   background-size: cover;
   transform: rotate(90deg);
+  background-position: center;
+  background-size: 80% 80%;
 }
 
 .bodytwisted180 {
@@ -150,10 +236,14 @@ h2 {
   background-repeat: no-repeat;
   background-size: cover;
   transform: rotate(180deg);
+  background-position: center;
+  background-size: 80% 80%;
 }
 .bodytwisted270 {
   background-image: url("./images/bodytwisted.png");
   background-repeat: no-repeat;
   background-size: cover;
   transform: rotate(270deg);
-}
+  background-position: center;
+  background-size: 80% 80%;
+} */

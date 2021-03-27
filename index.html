@@ -9,10 +9,27 @@
     <title>Snake game</title>
   </head>
   <body>
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <h1>GAME OVER!</h1>
+        <h3>Your score was: <span id="scoreModal">0</span></h3>
+        <p>Try again? &#128579;</p>
+        <button id="start">Restart</button>
+        <span class="closeModalWindow"></span>
+      </div>
+    </div>
     <h1>Snake game</h1>
-    <button id="start">Restart</button>
     <h2>Score: <span id="score">0</span></h2>
     <div class="grid"></div>
+    <div class="controlButtons">
+      <button class="btns upButton">&#8593;</button>
+      <div class="leftRightBtn">
+        <button class="btns leftButton">&#8592;</button>
+        <button class="btns rightButton">&#8594;</button>
+      </div>
+      <button class="btns downButton">&#8595;</button>
+    </div>
     <img src="./images/logo.png" />
   </body>
 </html>
