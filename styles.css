@@ -2,7 +2,7 @@
 
 body {
   margin: 0;
-  padding: 2em;
+  padding: 1em;
   background-image: url("./images/backgroundImage.jpg");
   background-size: contain;
   background-position: right bottom;
@@ -22,6 +22,7 @@ img {
 h1,
 h2 {
   text-transform: uppercase;
+  margin: 0.2em;
   letter-spacing: 4px;
   text-shadow: 1px 1px black, -1px -1px #444;
 }
@@ -117,6 +118,12 @@ h2 {
   background-color: white;
   outline: none;
   border: 1px solid black;
+  margin-top: 1em;
+}
+
+.leftRightBtn {
+  display: flex;
+  column-gap: 4em;
 }
 
 .btns:active {
